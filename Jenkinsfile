@@ -9,7 +9,7 @@ pipeline {
       string(name: 'sonar_IP', defaultValue: '100.54.191.181', description: 'IP of sonarqube')
     }
     environment {
-      SONARQUBE_URL="${params.sonar_IP}:9000"
+      SONARQUBE_URL="http://${params.sonar_IP}:9000"
       SONARQUBE_TOKEN=credentials('Sonar-token')
     }
     stages {
