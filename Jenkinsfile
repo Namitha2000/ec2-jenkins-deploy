@@ -15,7 +15,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'master',
-                    url: 'https://github.com/ShilpaLB28/Java-mini-project.git'
+                    url: 'https://github.com/ShilpaLB28/maven-project.git'
             }
         }
         stage('Sonarqube Analysis') {
