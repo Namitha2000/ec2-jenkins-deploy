@@ -6,7 +6,8 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo "Checking out source code"
-                git url: 'https://github.com/Namitha2000/ec2-jenkins-deploy.git'
+                        git branch: 'main', url: 'https://github.com/Namitha2000/ec2-jenkins-deploy.git'
+
             }
         }
 
