@@ -15,6 +15,13 @@
   <name>Webapp</name>
   <description>Webapp.</description>
 
+  <distributionManagement>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://<NEXUS_EC2_IP>:8081/repository/maven-releases-repo/</url>
+    </repository>
+  </distributionManagement>
+
   <build>
     <finalName>${project.artifactId}</finalName>
 
